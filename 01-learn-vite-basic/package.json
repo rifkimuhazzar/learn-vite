@@ -1,0 +1,21 @@
+{
+  "name": "learn-vite",
+  "version": "1.0.0",
+  "description": "Learn Vite",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Rifki Muhazzar",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "sass": "^1.78.0",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.3"
+  },
+  "dependencies": {
+    "uuid": "^10.0.0"
+  }
+}

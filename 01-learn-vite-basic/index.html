@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello Vite</title>
+
+    <style>
+      /* hanya ekstensi .css yang dapat dihilangkan */
+      @import url("./css-sass/styles.css");
+      @import url("./css-sass/sample.sass");
+    </style>
+  </head>
+
+  <body>
+    <h1>Hello Vite H1</h1>
+    <h2>Hello Vite H2</h2>
+    <img
+      src="./img.jpg"
+      alt="Example Image"
+      style="height: 200px; width: auto"
+    />
+
+    <script type="module">
+      // extensi file .js/.ts dapat dihilangkan tanpa ada masalah
+      import { sayHello } from "./js-ts-json/say-hello.js";
+      import { sayGoodbye } from "./js-ts-json/say-goodbye.ts";
+      import { v4 } from "uuid";
+      import * as person from "./js-ts-json/person.json";
+      import textFile from "./hello.txt?raw";
+
+      sayHello("Vite JS");
+      sayGoodbye("Vite TS");
+
+      console.info(v4());
+      console.info(person);
+      console.info(person.name);
+      console.info(person.web);
+      console.info(person.language);
+      console.info(textFile);
+    </script>
+  </body>
+</html>
